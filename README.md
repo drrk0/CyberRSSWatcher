@@ -81,7 +81,7 @@ environment:
 
 Example:
 
-    CHANNEL_ID=-1001234567890
+    CHANNEL_ID="-1001234567890"
 
 Your bot must be **admin of the channel** to send messages.
 

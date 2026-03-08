@@ -8,7 +8,7 @@ services:
       - ./data:/app/data
 
     environment:
-      CHANNEL_ID: "-1003888746788"
+      CHANNEL_ID: ""
 
     secrets:
       - telegram_token

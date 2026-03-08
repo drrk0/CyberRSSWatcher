@@ -1,0 +1,18 @@
+services:
+  rss-bot:
+    build: .
+    container_name: rss-bot
+    restart: unless-stopped
+
+    volumes:
+      - ./data:/app/data
+
+    environment:
+      CHANNEL_ID: "-1003888746788"
+
+    secrets:
+      - telegram_token
+
+secrets:
+  telegram_token:
+    file: ./secrets/telegram_token.txt
